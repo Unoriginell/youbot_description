@@ -20,7 +20,7 @@
 						     
   <!-- sensors -->
   <xacro:include filename="$(find youbot_description)/urdf/sensors/hokuyo_urg04_laser.urdf.xacro"/>
-   	<xacro:include filename="$(find youbot_description)/urdf/sensors/hokuyo_urg04_laser2.urdf.xacro"/>
+  <xacro:include filename="$(find youbot_description)/urdf/sensors/hokuyo_urg04_laser2.urdf.xacro"/>
 
   <!-- Now we can start using the macros xacro:included above to define the actual youbot -->
 
@@ -43,5 +43,7 @@
   <xacro:hokuyo_urg04_laser2 name="base_laser_rear" parent="base" ros_topic="scan2" update_rate="10" min_angle="-1.570796327" max_angle="1.570796327">
     <origin xyz="-0.322 0 0" rpy="0 0 3.141592654"/>
   </xacro:hokuyo_urg04_laser2>
+
+
 
 </robot>
